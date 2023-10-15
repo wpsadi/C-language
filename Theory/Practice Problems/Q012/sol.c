@@ -7,7 +7,7 @@ int main()
    printf("Enter the character you want to check : ");
 
    // char x;
-   char x = 'm';
+   char x = 'M';
    // scanf("%c", &x);
 
    printf("\n\n");

@@ -1,0 +1,1 @@
+In this question , we understand that pow() return double and pow(10,2) returns 99 if we store it in a int type, so as to correct the result we do explicit typecasting to show the accurate result in integer

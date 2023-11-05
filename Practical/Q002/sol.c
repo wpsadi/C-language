@@ -7,8 +7,9 @@ int leap(int year);
 int main(){
     printf("Enter Year to check : ");
 
-    int year = 2002;
-    // scanf("%d",&year);
+    // int year = 2002;
+    int year;
+    scanf("%d",&year);
 
     int status = leap(year);
 

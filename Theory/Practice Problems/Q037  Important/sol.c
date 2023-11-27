@@ -9,7 +9,7 @@ int main(){
 
     int **p2 = &p1;
 
-    printf("%d",**p2);
+    printf("%d",*p1);
 
 
     return 0;

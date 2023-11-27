@@ -173,7 +173,7 @@
             </tr>
 
             <tr>
-               <td class="detail" colspan="2">Use of <span class="b i">;</span> is must at end of each line</td>
+               <td class="detail" colspan="2">Use of <span class="b i ct">;</span> is must at end of each line</td>
             </tr>
 
             <tr>
@@ -439,10 +439,96 @@
                <td class="detail" colspan="2">
                   <h4 class="center ct">How is a function declared in C ?</h4>
                   see here in the figure that we declared a <span class="ct u">function prototype</span> then at the bottom we wrote <span class="ct u">funtion definition</span> and in the <span class="i u">main function we did the <span class="ct">function calling</span></span>.
+                  <br><br>
+                  there are two ways of <span class="ct">function prototype</span>
+<pre class="i func">
+   <span class="dt">void</span> sum(<span class="dt">int</span> a, <span class="dt">int</span> b);
+   OR
+   <span class="dt">void</span> sum(<span class="dt">int</span>, <span class="dt">int</span>);
+</pre>
                   <br>
                   <br>
                   <div class="div-center"><img src="page-assets/function.png" alt="" class="img-p"></div>
                </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <br><br><br>
+   <div class="tbl-cont">
+      <table align="center" cellpadding="12" cellspaceing="5" border="1">
+         <thead>
+            <tr>
+               <th class="top-l-data top-r-data" colspan="2">Recursion</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="topic">Definition</td>
+               <td class="detail">a function calling itself is called <span class="ct">Recursion</span></td>
+            </tr>
+            <tr>
+               <td class="detail" colspan="2">
+                  <h3 class="center">Properties of Recursion</h3>
+                  <div class="div-center">
+                     <img src="page-assets/prop-rec.png" alt="" class="img-l">
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td class="detail" colspan="2">
+                  <h3 class="center">Example code of Recursion</h3>
+                  <div class="div-center">
+                     <img src="page-assets/ex-recur.png" alt="" class="img-p">
+                  </div>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <br><br><br>
+   <div class="tbl-cont">
+      <table align="center" cellpadding="12" cellspaceing="5" border="1">
+         <thead>
+            <tr>
+               <th class="top-l-data top-r-data" colspan="2">Pointer</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="topic">Definition</td>
+               <td class="detail"> variable that stores the memory
+                  address of another variable</td>
+            </tr>
+            <tr>
+               <td class="detail" colspan="2"> 
+                  <div style="box-sizing: border-box; padding-left:20%;">
+                     <span class="ct">*</span> - "value of pointer"
+                     <!-- <br>
+                     <span><span class="func">printf</span>("%p", ptr1);</span> -->
+                     <br><br>
+                     <span class="ct">&</span> - "memory address at"
+                     <!-- <br>
+                     <span><span class="func">printf</span>("%p", &ptr1);</span> -->
+                     <br><br>
+
+                     <span class="ct">**</span> - <span class="purp i">used in pointer to pointer</span>
+                     <br>
+                     <span><span class="func">int **ptr2 = *(&ptr1);</span><br>
+                     <span><span class="func">printf</span>("%p", ptr2);</span>
+                  </div>
+
+                  <br>
+                  <br>
+                  <h3 class="center">This snippet of code will help you more to understand pointer properly</h3>
+                  <div class="div-center">
+                     <img src="page-assets/ptr.png" alt="" class="img-p">
+                  </div>
+
+               </td>
+            </tr>
+            <tr>
+               <td class="detail " colspan="2">You can use <span class="purp">pointer</span> to <span class="u">pass <span class="i">value as reference</span></span> at the <span class="ct">time of function calling</span></td>
             </tr>
          </tbody>
       </table>

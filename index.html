@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>C - Notes</title>
+   <style>
+      body {
+         background-color: rgb(72, 148, 91);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .topic {
+         vertical-align: top;
+         font-weight: semibold;
+         font-family: arial;
+      }
+
+      .detail {
+         font-size: 16px;
+         font-weight: lighter;
+         width: 685px;
+         /* overflow-x:scroll; */
+         /* display:block ; */
+         font-family: monospace;
+      }
+
+      .top-l-data {
+         border-top-left-radius: 10px;
+      }
+
+      .top-r-data {
+         border-top-right-radius: 10px;
+      }
+
+      .bottom-l-data {
+         border-bottom-left-radius: 10px;
+      }
+
+      .bottom-r-data {
+         border-bottom-right-radius: 10px;
+      }
+
+      table {
+         padding: 10px 20px;
+         border-radius: 20px;
+         /* width: calc(20vw); */
+         border-radius: 20px;
+         overflow-x: scroll;
+         background-color: #fff;
+      }
+
+      .tbl-cont {
+         /* background-color: #fff; */
+         padding: 10px;
+         border-radius: 20px;
+         width: fit-content;
+         background-image: radial-gradient(at right top, rgb(59, 179, 105) 20%, rgb(43, 40, 40));
+         background-repeat: no-repeat;
+
+      }
+
+      .dt {
+         color: rgba(0, 177, 153, 0.644)
+      }
+
+      .purp {
+         color: purple;
+      }
+
+      .i{
+         font-style: italic;
+      }
+
+      .func{
+         color:rgb(148, 132, 59)
+      }
+
+      .b{
+         font-weight:bold;
+      }
+
+      .u{
+         text-decoration: underline;
+      }
+   </style>
+</head>
+
+<body>
+   <!--    <div class="tbl-cont">
+      <table align="center" cellpadding="12" cellspaceing="5" border="1">
+         <thead>
+            <tr>
+               <th class="top-l-data">Topic</th>
+               <th class="top-r-data">Details</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="topic">Compiler<b>?</b></td>
+               <td class="detail">It contains rules for the language</td>
+            </tr>
+         </tbody>
+      </table>
+   </div> -->
+
+   <div class="tbl-cont">
+      <table align="center" cellpadding="12" cellspaceing="5" border="1">
+         <thead>
+            <tr>
+               <th class="top-l-data top-r-data bottom-l-data bottom-r-data" colspan="2">Basic Knowledge</th>
+            </tr>
+            <tr>
+               <th class="top-l-data">Topic</th>
+               <th class="top-r-data">Details</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="topic">Compiler<b>?</b></td>
+               <td class="detail">It contains rules for the language</td>
+            </tr>
+            <tr>
+               <td class="topic"><span class="purp">#include&nbsp;&lt;&gt;</span><b>?</b></td>
+               <td class="detail">Tells compiler about the use of a header file neccessary for the execution of the code
+               </td>
+            </tr>
+
+            <tr>
+               <td class="topic"><span class="dt">int</span>&nbsp;main</td>
+               <td class="detail">
+                  it is a default function in which the code is to be written
+                  <br><br>
+                  <i>Note : if <span class="purp">return</span> is not mention in the <u>main()</u> function then the
+                     compiler will automatically add return at the end</i>
+               </td>
+            </tr>
+
+            <tr>
+               <td class="detail" colspan="2">Use of </td>
+            </tr>
+
+            <tr>
+               <td class="topic func">printf()<span class="b" style="color:#000">;</span></td>
+               <td class="detail">It contains rules for the language</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+
+</body>
+
+</html>

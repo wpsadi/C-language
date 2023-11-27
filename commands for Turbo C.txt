@@ -1,0 +1,5 @@
+Alt C - compile
+Alt R - run
+
+Alt F5 - display to edit
+Alt Enter - change screen size

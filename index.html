@@ -7,6 +7,7 @@
    <title>C - Notes</title>
    <style>
       body {
+         min-width:1024px;
          background-color: rgb(72, 148, 91);
          display: flex;
          flex-direction: column;
@@ -71,20 +72,52 @@
          color: purple;
       }
 
-      .i{
+      .i {
          font-style: italic;
       }
 
-      .func{
-         color:rgb(148, 132, 59)
+      .func {
+         color: rgb(148, 132, 59)
       }
 
-      .b{
-         font-weight:bold;
+      .b {
+         font-weight: bold;
       }
 
-      .u{
+      .u {
          text-decoration: underline;
+      }
+
+      .ct {
+         color: green;
+      }
+
+      code{
+         font-size:1.1rem;
+      }
+
+      .center{
+         text-align:center;
+      }
+
+      .img-l{
+         --size :120%;
+         border-radius:calc((1/9)*(1/6)*var(--size));
+         height: calc((2/5)*var(--size));
+         width : calc((4/5)*var(--size));
+      }
+
+      .img-p{
+         --size :700px;
+         border-radius:calc((1/9)*(1/6)*var(--size));
+         height: calc(5/9*var(--size));
+         width : calc(4/9*var(--size));
+      }
+
+      .div-center{
+         display:flex;
+         align-items:center;
+         flex-direction: column;
       }
    </style>
 </head>
@@ -140,17 +173,280 @@
             </tr>
 
             <tr>
-               <td class="detail" colspan="2">Use of </td>
+               <td class="detail" colspan="2">Use of <span class="b i">;</span> is must at end of each line</td>
             </tr>
 
             <tr>
                <td class="topic func">printf()<span class="b" style="color:#000">;</span></td>
-               <td class="detail">It contains rules for the language</td>
+               <td class="detail">To print something on the terminal
+                  <br><br>
+                  <span class="i"><span class="func">printf(</span>"%d", num<span class="func">);</span></span>
+                  <br>
+                  <span class="i u ct">Note: here "%d" is the "format specifier"</span>
+                  <br><br>
+                  <div class="div-center">
+                     <img src="page-assets/format-specifier-1.png" alt="" class="img-l">
+                     <img src="page-assets/format-specifier-2.png" alt="" class="img-l"></div>
+               </td>
+            </tr>
+
+            <tr>
+               <td class="topic func">scanf()<span class="b" style="color:#000">;</span></td>
+               <td class="detail">To take value of variable terminal
+                  <br><br>
+                  <span class="i"><span class="func">scanf(</span>"%d", &num<span class="func">);</span></span>
+                  <br>
+                  <span class="i">Note: use "&" is must while taking value</span>
+               </td>
+            </tr>
+
+            <tr>
+               <td class="i" style="box-sizing: border-box; padding-left:30%;" colspan="2">
+                  <code>
+                     <span class="purp">#include&nbsp;&lt;stdio.h&gt;</span>
+                     <br><br>
+                     <span class="dt">int</span>&nbsp;<span class="func">main(){</span>
+                        <br>
+                        <span class="ct">&nbsp;&nbsp;&nbsp;&nbsp;// write your code here</span>
+                        <br>
+                        <span class="purp">&nbsp;&nbsp;&nbsp;&nbsp;return</span>
+                        <span class="func">0;</span>
+                        <br>
+                     <span class="func">}</span>
+                  </code>
+               </td>
             </tr>
          </tbody>
       </table>
    </div>
+   <br><br><br>
+   <div class="tbl-cont">
+      <table align="center" cellpadding="12" cellspaceing="5" border="1">
+         <thead>
+            <tr>
+               <th class="top-l-data top-r-data" colspan="2">Various <span class="dt">Datatype</span> in C</th>
+            </tr>
+         </thead>
+         <tbody>
+            <!-- <tr>
+               <td class="topic">Compiler<b>?</b></td>
+               <td class="detail">It contains rules for the language</td>
+            </tr> -->
 
+            <tr>
+               <td class="topic dt i">int</td>
+               <td class="detail">
+                  to store an integer
+                  <br><br>
+                  <span class="i">
+                     <span class="dt">int</span> num = 10;
+                  </span>
+               </td>
+            </tr>
+            <tr>
+               <td class="topic dt i">char</td>
+               <td class="detail">to store a single character
+                  <br><br>
+                  <span class="i"><span class="dt">char</span> str = <span class="func">'</span>x<span class="func">'</span></span>
+                  <br>
+                  <span class="i">Note: for single character, <span class="b">use single quotes <span class="b func">''</span></span></span>
+               </td>
+            </tr>
+            <tr>
+               <td class="detail" colspan="2">
+                  <h5 class="center">Rules to naming a variable</h5>
+                  <ul class="i " style="list-style: lower-greek;padding-left:20%;box-sizing: border-box;">
+                     <li>variable is case sensitive</li>
+                     <li>1st character is Alpahebt or "_"</li>
+                     <li>no comma / blank spaces</li>
+                     <li>no other symbol than "_"</li>
+                  </ul>
+               </td>
+            </tr>
+            <td class="detail" colspan="2">
+
+               <h5 class="center">Storage used by various DataTypes</h5>
+               <div class="div-center">
+                  <img src="page-assets/dt.png" alt="" class="img-p">
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td class="topic">keyword<span class="b">?</span></td>
+            <td class="detail">
+               <span class="purp">Reserved words</span> in a coding language
+               <br>
+               <br>
+               <div class="div-center">
+                  <img src="page-assets/keyword.png" alt="" class="img-p">
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td class="topic ct u">comments</td>
+            <td class="detail ct">
+               // like this
+               <br><br>
+               /*<br>
+               and like this<br>
+               */
+            </td>
+         </tr>
+
+         <tr>
+            <td class="detail" colspan="2">
+               <h5 class="center">Various <span class="func">escape sequences</span></h5>
+               <div class="div-center"><img src="page-assets/escape-Seq.png" alt="" class="img-l"></div>
+            </td>
+         </tr>
+
+         <tr>
+            <td class="detail" colspan="2">
+               <h3 class="center">Type Conversion</h3>
+               <div class="div-center"><img src="page-assets/type-conversion.png" alt="" class="img-l"></div>
+            </td>
+         </tr>
+
+
+         </tbody>
+      </table>
+   </div>
+   <br><br><br>
+   <div class="tbl-cont">
+      <table align="center" cellpadding="12" cellspaceing="5" border="1">
+         <thead>
+            <tr>
+               <th class="top-l-data top-r-data" colspan="2">Operators</th>
+            </tr>
+         </thead>
+         <tbody>
+            <!-- <tr>
+               <td class="topic">Compiler<b>?</b></td>
+               <td class="detail">It contains rules for the language</td>
+            </tr> -->
+
+            <tr>
+               <td class="topic">Arithmetic Operators</td>
+               <td class="detail">+, -, /, %, //, *, <span class="ct i">(**, ^) are not available in C language for power</span></td>
+            </tr>
+            <tr>
+               <td class="topic">Relational Operators</td>
+               <td class="detail">==, &gt;, &gt;=, &lt;, &lt;= ,!=</td>
+            </tr>
+            <tr>
+               <td class="topic">Logical Operators</td>
+               <td class="detail">&&<span class="ct i">(AND)</span>, ||<span class="ct i">(OR)</span>, !<span class="ct i">(NOT)</span></td>
+            </tr>
+            <tr>
+               <td class="topic">Assignment Operators</td>
+               <td class="detail">+=, -=, *=, /=, %=</td>
+            </tr>
+            <tr>
+               <td class="detail i ct" colspan="2">
+                  <div class="center">// check the precendency order of all these Operators</div>
+               </td>
+            </tr>
+            <tr>
+               <td class="detail u i" colspan="2">
+                  <div class="center"> learn "ternary", "if-else", "switch" from JS Notes <a href="https://wpsadi.github.io/catchup/FSWD/JS.html" target="_blank">(CLICK HERE)</a></div>
+               </td>
+            </tr>
+            
+         </tbody>
+      </table>
+   </div>
+   <br><br><br>
+   <div class="tbl-cont">
+      <table align="center" cellpadding="12" cellspaceing="5" border="1">
+         <thead>
+            <tr>
+               <th class="top-l-data top-r-data" colspan="2">LOOPS</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="topic">Jumping <span class="purp">statements</span></td>
+               <td class="detail">
+                  <span class="purp">break</span> - <span class="u">skips <span class="i">all the next</span> iterations</span> of loop and exits the loop
+                  <br><br>
+                  <span class="purp">continue</span> - <span class="u">skips the <span class="i">current</span> iteration</span> and not affecting other iterations
+               </td>
+            </tr>
+            <tr>
+               <td class="topic purp"><span class="u">for</span> loop</td>
+               <td class="detail">
+                  <pre>
+<span class="purp">for</span> (<span class="dt">int</span> i = 1; i &lt;= num; i++){
+   <span class="func">if</span> (i != 6){
+      <span class="func">printf</span>("%d\n",i);
+   }
+}                  </pre>
+               </td>
+            </tr>
+            <tr>
+               <td class="topic purp"><span class="u">while</span> loop</td>
+               <td class="detail">
+                  <pre>
+<span class="dt">int</span> i = 10;
+
+<span class="purp">while</span> (i > 0){
+   <span class="func">printf</span>("%d\n",i);
+   i--;
+}
+                  </pre>
+               </td>
+            </tr>
+            <tr>
+               <td class="topic purp"><span class="u">do while</span> loop</td>
+               <td class="detail">
+                  <pre>
+<span class="dt">int</span> num;
+
+<span class="purp">d</span>o{
+   <span class="func">printf</span>("Enter number : ");
+                  
+   <span class="func">scanf</span>("%d",&num);
+                  
+   <span class="func">printf</span>("\n");
+}<span class="purp">while</span>(num % 7 == 0);
+                  </pre>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <br><br><br>
+   <div class="tbl-cont">
+      <table align="center" cellpadding="12" cellspaceing="5" border="1">
+         <thead>
+            <tr>
+               <th class="top-l-data top-r-data" colspan="2">Function</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="topic ct">Theory</td>
+               <td class="detail">there are two type of function:
+                  <br><br>
+                  <li class="i func">User-defined functions</li>
+                  <li class="i func">Library functions</li>
+
+                  <br><br>
+                  function takes arguments and values passes at the time of function calling are known as <span class="ct u">actual parameters</span>
+               </td>
+            </tr>
+            <tr>
+               <td class="detail" colspan="2">
+                  <h4 class="center ct">How is a function declared in C ?</h4>
+                  see here in the figure that we declared a <span class="ct u">function prototype</span> then at the bottom we wrote <span class="ct u">funtion definition</span> and in the <span class="i u">main function we did the <span class="ct">function calling</span></span>.
+                  <br>
+                  <br>
+                  <div class="div-center"><img src="page-assets/function.png" alt="" class="img-p"></div>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
 </body>
 
 </html>

@@ -7,10 +7,8 @@
 int main()
 {
     int num = 123;
-    // printf("Enter a number to check : ");
-    // scanf("%d", &num);
 
-    printf("\n\n");
+    // printf("\n\n");
 
     int x = num;
 

@@ -7,7 +7,7 @@ void convert(int num);
 
 int main()
 {
-    int x = 123;
+    int x = 110010;
     convert(x);
 }
 
@@ -27,10 +27,12 @@ void convert(int num)
     // printf("%d",i);
 
     int dec = 0;
-    while (num > 0)
+    int count = 0;
+    while (num > 0 && (count< i))
     {
-        dec += ((num%10)*pow(2,(i-1)));
-        i--;
+        dec += ((num%10)*pow(2,(count)));
+        // i--;
+        count++;
         num = num / 10;
     }
     dec += ((num%10)*pow(2,i--));

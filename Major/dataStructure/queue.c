@@ -7,14 +7,14 @@ int top = 0;
 int deQ = 0;
 
 int isfull(){
-    if (top == (cap-1)){
+    if (top-deQ == (cap-1)){
         return 1;
     }
     return 0;
 }
 
 int isEmpty(){
-    if (top == 0){
+    if (top-deQ == 0){
         return 1;
     }
     return 0;
@@ -33,8 +33,8 @@ void delete(){
 
 int main(){
     insert(4);
-    insert(3);
+    //insert(3);
     delete();
-    isEmpty();
+    printf("\n%d",isEmpty());
     return 0;
 }
